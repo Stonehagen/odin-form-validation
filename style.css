@@ -47,3 +47,11 @@ input {
   padding-left: 10px;
   border-width: 1px;
 }
+
+input:invalid {
+  border: 1px solid red;
+}
+
+input:focus:invalid {
+  box-shadow: none;
+}

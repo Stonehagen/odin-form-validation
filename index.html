@@ -10,13 +10,19 @@
   </head>
   <body>
     <div class="container">
-      <form action="POST">
+      <form>
         <label for="email">Email</label>
         <input type="email" name="email" id="email" />
         <label for="country">Country</label>
         <input type="text" name="country" id="country" />
         <label for="zip-code">Zip Code</label>
-        <input type="text" name="zip-code" id="zip-code" />
+        <input
+          type="number"
+          minlength="4"
+          maxlength="8"
+          name="zip-code"
+          id="zip-code"
+        />
         <label for="password">Password</label>
         <input type="password" name="password" id="password" />
         <label for="password-confirmation">Password confirmation</label>
@@ -26,7 +32,7 @@
           id="password-confirmation"
         />
         <p id="info"></p>
-        <button type="submit">Submit</button>
+        <button>Submit</button>
       </form>
     </div>
   </body>
